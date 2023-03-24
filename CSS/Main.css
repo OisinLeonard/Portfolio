@@ -1,0 +1,17 @@
+
+.button{
+
+	background-color: #64a70b;
+	height: 40px;
+	width: 50px;
+	padding: 10px;
+	boarder-radius:10px;
+	/*boarder: 1px solid #c4c4c4,*/
+
+}
+
+
+.plus{
+	background-color: #64a70b;
+	
+}

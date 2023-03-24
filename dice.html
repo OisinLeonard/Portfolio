@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <img src="" id="myImg">
+    <button onclick="clickevent()">Yes</button>
+    <button type= "button" onclick="NoCode()" >No</button>
+
+    <script>
+    
+        function clickevent(){
+            //im creating a variable here to create a random number from 1-6
+      var  rannum = Math.floor(Math.random() * 6) + 1;
+
+// here i am inserting my image into a src tag in order to dispaly the image
+        if(rannum==1){
+            alert("1")
+            document.getElementById("myImg").src = "img/pic1.jpg";
+        }
+        if(rannum==2){
+            alert("2")
+            document.getElementById("myImg").src = "img/pic2.jpg";
+        }
+        if(rannum==3){
+            alert("3")
+            document.getElementById("myImg").src = "img/pic3.jpg";
+        }
+        if(rannum==4){
+            alert("4")
+            document.getElementById("myImg").src = "img/pic4.jpg";
+        }
+        if(rannum==5){
+            alert("5")
+            document.getElementById("myImg").src = "img/pic5.jpg";
+        }
+        if(rannum==6){
+            alert("6")
+            document.getElementById("myImg").src = "img/pic6.jpg";
+        }
+    }
+
+// this function works out the no option on the roll the dice game
+//the dice will not move and 1of 4 image will pop up with an alert and tell you to pick the yes option 
+    function NoCode(){
+
+        NoRanWord = Math.floor(Math.random() * 4) + 1;
+    
+if(NoRanWord==1){
+            alert("Wrong Answer")
+        }
+        if(NoRanWord==2){
+            alert("Wrong")
+        }
+if(NoRanWord==3){
+            alert("You are a fool")
+        }
+        if(NoRanWord==4){
+            alert("Bazinga")
+        }
+    }
+    </script>
+</body>
+
+</html>
